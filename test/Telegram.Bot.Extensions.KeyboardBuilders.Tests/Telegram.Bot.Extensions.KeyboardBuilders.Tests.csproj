@@ -11,10 +11,6 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../../src/Telegram.Bot.Extensions.KeyboardsBuilder/Telegram.Bot.Extensions.KeyboardsBuilder.csproj" />
-    <ProjectReference Include="..\..\src\Telegram.Bot.Extensions.KeyboardBuilders\Telegram.Bot.Extensions.KeyboardBuilders.csproj">
-      <Project>{2B58E4F9-6AFE-4832-A781-872533AAAE0D}</Project>
-      <Name>Telegram.Bot.Extensions.KeyboardBuilders</Name>
-    </ProjectReference>
+    <ProjectReference Include="../../src/Telegram.Bot.Extensions.KeyboardBuilders/Telegram.Bot.Extensions.KeyboardBuilders.csproj" />
   </ItemGroup>
 </Project>
