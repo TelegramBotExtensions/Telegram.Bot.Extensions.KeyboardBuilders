@@ -4,7 +4,7 @@
 
 | Branch | Status |
 |:------:|:-------|
-| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/6viiwy5alg7jk84f?svg=true)](https://ci.appveyor.com/project/Tuscen/telegram-bot-extensions-keyboardbuilders/branch/master) |
+| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/6viiwy5alg7jk84f/branch/master?svg=true)](https://ci.appveyor.com/project/Tuscen/telegram-bot-extensions-keyboardbuilders/branch/master) |
 | `develop` | [![Build status](https://ci.appveyor.com/api/projects/status/6viiwy5alg7jk84f/branch/develop?svg=true)](https://ci.appveyor.com/project/Tuscen/telegram-bot-extensions-keyboardbuilders/branch/develop) |
 
 This library is supposed to be used with [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot).
