@@ -16,14 +16,8 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Tuscen/Telegram.Bot.Extensions.KeyboardBuilders.git</RepositoryUrl>
     <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix>alpha</VersionSuffix>
+    <VersionSuffix>alpha.1</VersionSuffix>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-  </PropertyGroup>
-
-  <!-- when building on AppVeyor -->
-  <PropertyGroup Condition="'$(AppVeyor)' == 'True'">
-    <Version Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</Version>
-    <VersionSuffix Condition="'$(VersionSuffix)' != ''">$(VersionSuffix).$(APPVEYOR_BUILD_NUMBER)</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
