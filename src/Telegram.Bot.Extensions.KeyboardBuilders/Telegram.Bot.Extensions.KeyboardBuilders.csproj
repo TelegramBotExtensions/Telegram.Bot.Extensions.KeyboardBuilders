@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <PackageId>Tuscen.Telegram.Bot.Extensions.KeyboardBuilders</PackageId>
     <TargetFramework>netstandard1.1</TargetFramework>
@@ -14,10 +15,19 @@
     <IncludeSource>True</IncludeSource>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Tuscen/Telegram.Bot.Extensions.KeyboardBuilders.git</RepositoryUrl>
-    <version>0.0.1-alpha.1</version>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <!-- when building on AppVeyor -->
+  <PropertyGroup Condition="'$(AppVeyor)' == 'True'">
+    <Version Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</Version>
+    <VersionSuffix Condition="'$(VersionSuffix)' != ''">$(VersionSuffix).$(APPVEYOR_BUILD_NUMBER)</VersionSuffix>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Telegram.Bot" Version="14.2.0-rc-452" />
   </ItemGroup>
+
 </Project>
