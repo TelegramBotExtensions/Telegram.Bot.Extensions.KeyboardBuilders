@@ -8,20 +8,23 @@
     <Title>Telegram Bot Keyboard Builders</Title>
     <Description>Simple keyboard builders for Telegram.Bot library.</Description>
     <Authors>Aleskey Usatov</Authors>
-    <Copyright>Aleskey Usatov, 2018</Copyright>
-    <PackageProjectUrl>https://github.com/Tuscen/Telegram.Bot.Extensions.KeyboardBuilders</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/Tuscen/Telegram.Bot.Extensions.KeyboardBuilders/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Aleskey Usatov, 2020</Copyright>
+    <PackageProjectUrl>
+      https://github.com/TelegramBotExtensions/Telegram.Bot.Extensions.KeyboardBuilders
+    </PackageProjectUrl>
+    <PackageLicenseUrl>
+      https://raw.githubusercontent.com/TelegramBotExtensions/Telegram.Bot.Extensions.KeyboardBuilders/master/LICENSE
+    </PackageLicenseUrl>
     <PackageTags>Telegram;Bot;Api;Builder;Keyboard</PackageTags>
     <IncludeSource>True</IncludeSource>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Tuscen/Telegram.Bot.Extensions.KeyboardBuilders.git</RepositoryUrl>
-    <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix>alpha.1</VersionSuffix>
+    <VersionPrefix>1.0.0</VersionPrefix>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Telegram.Bot" Version="14.2.0-rc-452" />
+    <PackageReference Include="Telegram.Bot" Version="15.0.0" />
   </ItemGroup>
 
 </Project>

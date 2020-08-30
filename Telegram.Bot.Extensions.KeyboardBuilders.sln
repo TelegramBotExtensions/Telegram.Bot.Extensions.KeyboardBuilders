@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
@@ -10,6 +10,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B94B686F-D9C0-4257-A9DD-A630798D1ED4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Bot.Extensions.KeyboardBuilders.Tests", "test\Telegram.Bot.Extensions.KeyboardBuilders.Tests\Telegram.Bot.Extensions.KeyboardBuilders.Tests.csproj", "{264DB316-9731-4312-A8A6-1A3961774823}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{C8E4F011-6644-4CDC-AB62-B6ABBFDC4FB8}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
