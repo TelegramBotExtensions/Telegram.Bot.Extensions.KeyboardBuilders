@@ -14,7 +14,7 @@ This library is supposed to be used with [Telegram.Bot](https://github.com/Teleg
 Reply keyboard markup:
 
 ```csharp
-var keyboard = new RegularKeyboardBuilder();
+var keyboard = new ReplyKeyboardBuilder();
 
 keyboard.AddRow(row =>
     {
