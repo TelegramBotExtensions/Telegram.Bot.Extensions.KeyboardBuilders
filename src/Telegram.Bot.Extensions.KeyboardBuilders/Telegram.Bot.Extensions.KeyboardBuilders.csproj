@@ -12,9 +12,7 @@
     <PackageProjectUrl>
       https://github.com/TelegramBotExtensions/Telegram.Bot.Extensions.KeyboardBuilders
     </PackageProjectUrl>
-    <PackageLicenseUrl>
-      https://raw.githubusercontent.com/TelegramBotExtensions/Telegram.Bot.Extensions.KeyboardBuilders/master/LICENSE
-    </PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Telegram;Bot;Api;Builder;Keyboard</PackageTags>
     <IncludeSource>True</IncludeSource>
     <RepositoryType>git</RepositoryType>
