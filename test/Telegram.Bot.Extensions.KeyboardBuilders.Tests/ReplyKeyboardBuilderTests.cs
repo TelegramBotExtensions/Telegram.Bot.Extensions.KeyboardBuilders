@@ -4,12 +4,12 @@ using Xunit;
 
 namespace Telegram.Bot.Extensions.KeyboardBuilders.Tests
 {
-    public class RegularKeyboardBuilderTests
+    public class ReplyKeyboardBuilderTests
     {
         [Fact]
         public void Throws_Invalid_Operation_Exception_During_Enumeration_If_Modified()
         {
-            RegularKeyboardBuilder keyboardBuilder = new RegularKeyboardBuilder();
+            ReplyKeyboardBuilder keyboardBuilder = new ReplyKeyboardBuilder();
             keyboardBuilder.AddRow(row => row.AddTextButton("foo"));
 
             Assert.Throws<InvalidOperationException>(() =>
@@ -24,7 +24,7 @@ namespace Telegram.Bot.Extensions.KeyboardBuilders.Tests
         [Fact]
         public void Implicitly_Casts_To_Reply_Keyboard_Markup()
         {
-            RegularKeyboardBuilder keyboardBuilder = new RegularKeyboardBuilder();
+            ReplyKeyboardBuilder keyboardBuilder = new ReplyKeyboardBuilder();
             keyboardBuilder.AddRow(row => row.AddTextButton("foo"));
 
             ReplyKeyboardMarkup replyKeyboardMarkup = keyboardBuilder;
@@ -35,7 +35,7 @@ namespace Telegram.Bot.Extensions.KeyboardBuilders.Tests
         [Fact]
         public void Can_Be_Passed_As_Parameter_To_Reply_Keyboard_Markup()
         {
-            RegularKeyboardBuilder keyboardBuilder = new RegularKeyboardBuilder();
+            ReplyKeyboardBuilder keyboardBuilder = new ReplyKeyboardBuilder();
             keyboardBuilder.AddRow(row => row.AddTextButton("foo"));
 
             ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup(keyboardBuilder);
