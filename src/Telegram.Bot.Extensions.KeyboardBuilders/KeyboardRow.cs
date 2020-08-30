@@ -15,14 +15,8 @@ namespace Telegram.Bot.Extensions.KeyboardBuilders
             return this;
         }
 
-        public IEnumerator<TButton> GetEnumerator()
-        {
-            return _row.GetEnumerator();
-        }
+        public IEnumerator<TButton> GetEnumerator() => _row.GetEnumerator();
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
