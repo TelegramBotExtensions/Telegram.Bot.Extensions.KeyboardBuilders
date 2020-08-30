@@ -5,11 +5,11 @@ using Telegram.Bot.Types.ReplyMarkups;
 
 namespace Telegram.Bot.Extensions.KeyboardBuilders
 {
-    public class RegularKeyboardBuilder : IEnumerable<KeyboardRow<KeyboardButton>>
+    public class ReplyKeyboardBuilder : IEnumerable<KeyboardRow<KeyboardButton>>
     {
         private readonly IList<KeyboardRow<KeyboardButton>> _rows = new List<KeyboardRow<KeyboardButton>>();
 
-        public RegularKeyboardBuilder AddRow(Action<KeyboardRow<KeyboardButton>> rowBuilder)
+        public ReplyKeyboardBuilder AddRow(Action<KeyboardRow<KeyboardButton>> rowBuilder)
         {
             var newRow = new KeyboardRow<KeyboardButton>();
             rowBuilder(newRow);
@@ -20,7 +20,7 @@ namespace Telegram.Bot.Extensions.KeyboardBuilders
         public IEnumerator<KeyboardRow<KeyboardButton>> GetEnumerator() => _rows.GetEnumerator();
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-        public static implicit operator ReplyKeyboardMarkup(RegularKeyboardBuilder keyboardBuilder)
+        public static implicit operator ReplyKeyboardMarkup(ReplyKeyboardBuilder keyboardBuilder)
             => new ReplyKeyboardMarkup(keyboardBuilder);
     }
 }
