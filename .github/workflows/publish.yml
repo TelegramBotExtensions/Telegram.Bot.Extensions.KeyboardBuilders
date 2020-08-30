@@ -19,14 +19,14 @@ jobs:
       run: dotnet restore
     - name: Build
       run: |
-        dotnet build 
-        --configuration Release
-        --no-restore
-        --output ./output/
+        dotnet build \
+        --configuration Release \
+        --no-restore \
+        --output ./output
     - name: Publish to Nuget
       run: |
-        dotnet nuget push
-        ./output/*.nupkg
-        --api-key ${{ secrets.NUGET_KEY }}
-        --skip-duplicate
+        dotnet nuget push \
+        ./output/*.nupkg \
+        --api-key ${{ secrets.NUGET_KEY }} \
+        --skip-duplicate \
         --source https://api.nuget.org/v3/index.json
