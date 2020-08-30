@@ -1,0 +1,32 @@
+name: Publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: |
+        dotnet build 
+        --configuration Release
+        --no-restore
+        --output ./output/
+    - name: Publish to Nuget
+      run: |
+        dotnet nuget push
+        ./output/*.nupkg
+        --api-key ${{ secrets.NUGET_KEY }}
+        --skip-duplicate
+        --source https://api.nuget.org/v3/index.json
